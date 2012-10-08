@@ -1,0 +1,119 @@
+var kezdx=300;
+var kezdy=300;
+var vegex=600;
+var vegey=600;
+var lepesx;
+var lepesy;
+var x;
+var y;
+function init(){
+
+
+moveImage();
+moveImage2();
+moveImage3();
+moveImage4();
+moveImage5();
+
+
+}
+
+	
+var y1 = -100; //Starting Location - top
+var dest_y = 1600;  //Ending Location - top
+var interval = 10; //Move 10px every initialization
+
+	
+	
+var y2 = -150; //Starting Location - top
+var dest_y2 = 1600;  //Ending Location - top
+var interval2 = 12; //Move 10px every initialization
+
+	
+	
+var y3 = -200; //Starting Location - top
+var dest_y3 = 1600;  //Ending Location - top
+var interval3 = 16; //Move 10px every initialization
+
+	
+	
+var y4 = -250; //Starting Location - top
+var dest_y4 = 1600;  //Ending Location - top
+var interval4 = 18; //Move 10px every initialization
+
+	
+	
+var y5 = -300; //Starting Location - top
+var dest_y5 = 1600;  //Ending Location - top
+var interval5 = 15; //Move 10px every initialization
+
+function moveImage() {
+	//Keep on moving the image till the target is achieved
+	if(y1<dest_y) y1 = y1 + interval;
+	
+	//Move the image to the new location
+	document.getElementById("s1").style.top  = y1+'px';
+	if (y1+interval < dest_y) {
+		//Keep on calling this function every 100 microsecond 
+		//	till the target location is reached
+		window.setTimeout('moveImage()',100);
+	}
+}
+	
+
+
+function moveImage2() {
+	//Keep on moving the image till the target is achieved
+	if(y2<dest_y2) y2 = y2 + interval2;
+	
+	//Move the image to the new location
+	document.getElementById("s2").style.top  = y2+'px';
+	if (y2+interval2 < dest_y2) {
+		//Keep on calling this function every 100 microsecond 
+		//	till the target location is reached
+		window.setTimeout('moveImage2()',100);
+	}
+}
+	
+
+function moveImage3() {
+	//Keep on moving the image till the target is achieved
+	if(y3<dest_y3) y3 = y3 + interval3;
+	
+	//Move the image to the new location
+	document.getElementById("s3").style.top  = y3+'px';
+	if (y3+interval3 < dest_y3) {
+		//Keep on calling this function every 100 microsecond 
+		//	till the target location is reached
+		window.setTimeout('moveImage3()',100);
+	}
+}
+	
+function moveImage4() {
+	//Keep on moving the image till the target is achieved
+	if(y4<dest_y4) y4 = y4 + interval4;
+	
+	//Move the image to the new location
+	document.getElementById("cor1").style.top  = y4+'px';
+	if (y4+interval4 < dest_y4) {
+		//Keep on calling this function every 100 microsecond 
+		//	till the target location is reached
+		window.setTimeout('moveImage4()',100);
+	}
+}
+	
+function moveImage5() {
+	//Keep on moving the image till the target is achieved
+	if(y5<dest_y5) y5 = y5 + interval5;
+	
+	//Move the image to the new location
+	document.getElementById("dip1").style.top  = y5+'px';
+	if (y5+interval5 < dest_y5) {
+		//Keep on calling this function every 100 microsecond 
+		//	till the target location is reached
+		window.setTimeout('moveImage5()',100);
+	}
+}
+	
+
+

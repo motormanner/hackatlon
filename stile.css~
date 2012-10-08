@@ -1,0 +1,53 @@
+#kep{
+	position:absolute;
+	width:100px;
+	height:100px;
+	}
+	
+#masik{
+	position:absolute;
+	left: 300px;
+	width:100px;
+	height:50px;
+	}
+	
+	
+DIV.movable { position:absolute; }
+
+
+#s1{
+	position:absolute;
+	width:100px;
+	height:100px;
+	left: 100px;
+	}
+	
+#s2{
+	position:absolute;
+	width:100px;
+	height:100px;
+	left: 500px;
+	}
+	
+#s3{
+	position:absolute;
+	width:100px;
+	height:100px;
+	left: 900px;
+	}
+	
+	
+#cor1{
+	position:absolute;
+	width:100px;
+	height:100px;
+	left: 300px;
+	}
+	
+	
+#dip1{
+	position:absolute;
+	width:100px;
+	height:100px;
+	left: 700px;
+	}

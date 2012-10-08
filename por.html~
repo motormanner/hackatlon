@@ -1,0 +1,33 @@
+
+<html>
+<head>
+<title>Image Mover</title>
+<style>
+DIV.movable { position:absolute; }
+</style>
+<script language="javascript">
+var y1 = 5; //Starting Location - top
+var dest_y = 300;  //Ending Location - top
+var interval = 10; //Move 10px every initialization
+
+function moveImage() {
+	//Keep on moving the image till the target is achieved
+	if(y1<dest_y) y1 = y1 + interval;
+	
+	//Move the image to the new location
+	document.getElementById("ufo").style.top  = y1+'px';
+	if (y1+interval < dest_y) {
+		//Keep on calling this function every 100 microsecond 
+		//	till the target location is reached
+		window.setTimeout('moveImage()',100);
+	}
+}
+</script>
+</head>
+<body onload="moveImage()">
+<div id="ufo" class="movable">
+<img src="ufo.gif" alt="Please link to a vaild image." />
+</div>
+
+</body>
+</html>

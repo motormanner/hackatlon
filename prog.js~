@@ -1,0 +1,75 @@
+var kezdx=300;
+var kezdy=300;
+var vegex=600;
+var vegey=600;
+var lepesx;
+var lepesy;
+var x;
+var y;
+function init(){
+var kep=document.getElementById('kep');
+kep.style.top=kezdy+'px';
+kep.style.left=kezdx+'px';
+x=kezdx;
+y=kezdy;
+lepesx=1;
+lepesy=(vegey-kezdy)/(vegex-kezdx);
+setTimeout('mozog()',20);
+}
+function mozog(){
+var kep=document.getElementById('kep');
+//x=parseInt(kep.style.left);
+//y=parseInt(kep.style.top);
+status='lepesx: '+lepesx+', lepesy: '+lepesy+', x: '+x+', y: '+y;
+if (x+lepesx<=vegex){
+  x+=lepesx;
+  y+=lepesy;
+  kep.style.left=x+'px';
+  kep.style.top=y+'px';
+  setTimeout('mozog()',10);
+}
+else {
+  kep.style.left=vegex+'px';
+  kep.style.top=vegey+'px';
+  kep.style.height='200px';
+}
+
+}
+
+
+	
+	
+	function valami(){
+		
+document.write('--------------ggggggggggggggggggggggggggggggggggggggg-------'+'<br>');
+document.write('--------------ggggggggggggggggggggggggggggggggggggggg-------');		
+		setTimeout('bigyo()',1000);
+	alert('alert');	
+		}
+		
+		
+function bigyo(){
+var st_y=50;
+var sto_y=600;	
+var lep_y=1;
+var lepo= st_y;
+
+var ojje=document.getElementById('masik');
+
+for (i=0; i<3; i++)
+  {
+  	//alert('jjj');
+  ojje.style.top=lepo+'px';
+  //setTimeout('bela()',1000)
+	lepo=lepo+100;
+
+  bela();
+  }
+
+	}
+	
+	
+function bela()
+{
+
+	}

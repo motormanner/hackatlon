@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="stile.css" /> 
+
+<script type="text/javascript" src="prog_0.js"></script>
+
+
+
+
+
+</head>
+
+<body onload="init()">
+
+
+<script type="text/javascript">
+//valami();
+
+</script>
+
+<img id="s1"  src=s1.jpeg onclick="alert('Gatulálok!\nMegkaptad a fizetésed')">
+<img id="s2"  src=s2.jpeg onclick="alert('A jó munkáért\n az év végén\nbónuszt kapsz!')">
+<img id="s3"  src=s3.jpeg onclick="alert('Itt a fizud!')">
+<img id="cor1"  src=cor1.jpeg onclick="alert('Elfogadtad a kenőpénzt!\nEz jó neked, de ez nem szép dolog!\nMost valaki nagyon szomorú lett!')">
+<img id="dip1"  src=dip1.jpeg onclick="alert('Megvásároltad a diplomád!\nDe tudás nélkül a papír mit sem ér!')">
+
+
+</body>
+</html> 
+
